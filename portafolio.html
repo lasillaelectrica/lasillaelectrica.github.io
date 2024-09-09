@@ -1,0 +1,155 @@
+<html><head><base href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Dr. Julio Cardona - Endodoncista</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #1a5f7a;
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #2e86ab;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f0f4f8;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        h2 {
+            color: #1a5f7a;
+            border-bottom: 2px solid #2e86ab;
+            padding-bottom: 10px;
+        }
+        .portfolio-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: box-shadow 0.3s;
+        }
+        .portfolio-item:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .portfolio-item h3 {
+            color: #2e86ab;
+            margin-top: 0;
+        }
+        .portfolio-item p {
+            margin-bottom: 0;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Dr. Julio Cardona - Endodoncista</h1>
+    </header>
+    <nav>
+       <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="tarifas.html">Tarifas</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Portafolio de Servicios</h2>
+        <p>El Dr. Julio Cardona ofrece una amplia gama de servicios especializados en endodoncia. A continuación, encontrará nuestro portafolio detallado:</p>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>1. Consulta Especializada</h3>
+                <p>Evaluación exhaustiva y diagnóstico preciso de problemas dentales complejos.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>2. Tratamientos de Endodoncia</h3>
+                <p>Procedimientos avanzados para salvar dientes dañados o infectados.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>3. Cirugías Apicales</h3>
+                <p>Intervenciones quirúrgicas para tratar infecciones en la raíz del diente.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>4. Terapias Pulpares Vitales</h3>
+                <p>Tratamientos para conservar la vitalidad de la pulpa dental.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>5. Reimplante Intencional</h3>
+                <p>Técnica especializada para extraer y reimplantar un diente en su socket.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <h3>6. Autotransplante Dental</h3>
+                <p>Procedimiento para trasplantar un diente de una parte de la boca a otra.</p>
+            </div>
+        </div>
+
+        <p>Todos nuestros servicios se realizan utilizando tecnología de vanguardia y siguiendo los más altos estándares de calidad y seguridad en el campo de la endodoncia.</p>
+
+        <p>Si desea más información sobre alguno de nuestros servicios o quiere programar una consulta, no dude en contactarnos.</p>
+    </main>
+
+    <script>
+        // Podemos agregar interactividad aquí si es necesario
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Por ejemplo, podríamos mostrar más detalles o abrir un modal
+                alert('Para más información sobre este servicio, por favor contáctenos.');
+            });
+        });
+    </script>
+</body>
+</html>
